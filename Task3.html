@@ -10,6 +10,35 @@
             background-color: #f0f0f0;
             margin: 20px;
         }
+        nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+  color: #ff9800; 
+  transform: scale(1.1);
+}
+
+nav a:active {
+  color: #ff5722;
+}
         h1 {
             text-align: center;
             color: #333;
@@ -72,7 +101,11 @@
     </style>
 </head>
 <body>
-
+<nav>
+      <a href="index.html">DBZ</a>
+      <a href="worldcup.html">WORLD CUP</a>
+      <a href="Task3.html">MY PORTFOLIO</a>
+</nav>
 <h1>ICC Men's Cricket World Cup 2023 Schedule</h1>
 
 <table border="1">
